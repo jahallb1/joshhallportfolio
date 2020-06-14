@@ -232,27 +232,42 @@ header nav ul li a:hover {
       background-image: url(../images/verne-ho-7HSTizwGVPU-unsplash.jpg);
   }
 
+/*Media Q's*/
 
+@media screen and (max-width: 980) {
+    header {
+        padding: 0 0 10px 0;
+        justify-content: center;
+        justify-content: center;
+    }
 
-/*.bio-pic {
-    background-image: url(../images/Josh\ Hall\ Picture.jpg);
-    position: relative;
-    background-color: var(--fourth-color);
-    z-index: 100;
+    header h1 {
+        width: 100%;
+        padding: 5px;
+        font-size: 10w;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .page-section > h2 {
+        border-right: none;
+        border-bottom: 4px solid var(--first-color);
+    }
 }
 
+@media screen and (max-width: 768px) {
+    .grid-item,
+    .grid-item:first-child {
+        grid-column: 1 / -1;
+    }
 
-.flex-row {
-    display: flex;
-}
+    .grid-container {
+        grid-auto-rows: minmax(200px, 1fr);
+    }
 
-.section-title {
-    font-size: 24px;
-    text-align: right;
-
-}
-
-.section-text p {
-    line-height: 1.5;
-
+    .hero {
+        justify-content: center;
+    }
 }
