@@ -128,6 +128,23 @@ header nav ul li a:hover {
   .page-section > div {
     flex: 0 0 77%;
   }
+
+  .page-section p {
+      margin-bottom: 20px;
+  }
+
+  .grid-container {
+      display: grid;
+      column-gap: 10px;
+      row-gap: 10px;
+      grid-auto-flow: dense;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: minmax(150px, 1fr);
+  }
+
+  .grid-item {
+      border: 3px solid var(--third-color);
+  }
   
 
 /*.bio-pic {
