@@ -146,10 +146,12 @@ header nav ul li a:hover {
       border: 3px solid var(--third-color);
       grid-column: span 4;
       min-height: 150px;
+      color: var(--third-color);
       display: flex;
       align-items: flex-end;
       padding: 0 0 20px 0;
-      background-size: 150%;
+      text-decoration: none;
+      background-blend-mode: soft-light;
       background-size: 150%;
       transition: all 0.5s;
       font-size: 0.9rem;
@@ -160,12 +162,27 @@ header nav ul li a:hover {
       grid-row: span 2;
 
   }
+
+  .grid-item:hover {
+      background-color: var(--fourth-color);
+  }
+
+  .grid-item div {
+      background-color: var(--second-color);
+  }
+
+  .grid-item h3 {
+      font-size: 1.3rem;
+      color: var(--third-color);
+  }
+
+
   .contact address {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       height: 100%;
-      align-items: flex-end;
+      align-items: center;
   }
   .contact address a {
       color: var(--first-color);
@@ -173,6 +190,12 @@ header nav ul li a:hover {
       font-style: normal;
       font-size: 20px;
       background-image: bottom;
+      padding: 10px 5px;
+  }
+
+  .contact a:hover {
+      background-color: var(--fourth-color);
+      border-radius: 10px;
   }
 
   footer {
