@@ -16,19 +16,15 @@ body {
 }
 
 header {
-    padding: 20px 35px;
+    padding: 15px 6% 15px 0;
     background-color: var(--first-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url();
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
     z-index: 9999;
 }
 
@@ -80,17 +76,61 @@ header nav ul li a:hover {
 .hero {
     background-image: url("../images/building-photo.jpg");
     background-size: cover;
-    height: 400px;
+    min-height: 50vh;
     background-position: left;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: flex-end;
     background-attachment: fixed;
     background-position: 80%;
+    padding: 2% 6%;
 }
 
-.bio-pic {
+.hero div {
+    flex: flex-end;
+  }
+
+.hero div h3 {
+  background-color: var(--fourth-color);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  display: inline;
+}
+
+.page-wrapper {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--first-color);
+    font-size: 4vw;
+    line-height: 1.1;
+  }
+  
+  .page-section > div {
+    flex: 0 0 77%;
+  }
+  
+
+/*.bio-pic {
     background-image: url(../images/Josh\ Hall\ Picture.jpg);
     position: relative;
     background-color: var(--fourth-color);
