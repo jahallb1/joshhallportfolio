@@ -77,3 +77,38 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+.hero {
+    background-image: url("../images/building-photo.jpg");
+    background-size: cover;
+    height: 400px;
+    background-position: left;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.bio-pic {
+    background-image: url(../images/Josh\ Hall\ Picture.jpg);
+    position: relative;
+    background-color: var(--fourth-color);
+    z-index: 100;
+}
+
+
+.flex-row {
+    display: flex;
+}
+
+.section-title {
+    font-size: 24px;
+    text-align: right;
+
+}
+
+.section-text p {
+    line-height: 1.5;
+
+}
